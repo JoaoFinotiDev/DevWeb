@@ -1,0 +1,128 @@
+                        <!-- ao abrir uma nova pagina, digite "!" e tecle ENTER -->
+                        <!-- OBS: Espaços vazios entre as linhas de codigo são apenas para facilitar a compreensão durante os estudos, não reproduzir. -->
+
+<!DOCTYPE html>            
+<html lang="pt-br">     <!-- lang="idioma"-->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ESTUDO</title> <!--nome da aba-->
+</head>
+
+<body>                    <!-- (<body>) abre/corpo da pagina -->
+    
+    <header>              <!-- (<header>) abre espaço de cabeçalho -->
+        <h1>              <!-- (<h1>) abre conteudo 1 no cabeçalho  -->
+            PROVA 1 
+        </h1>             <!-- (</h1>) fecha conteudo 1 no cabeçalho -->
+        
+        <center>                    <!-- (<center>) abre centralização de tudo que estiver dentro dessa tag -->
+            <h2>                    <!-- (<h2>) abre conteudo 2 no cabeçalho  -->
+                <font color="blue"> <!-- (<font color="cor_da_fonte">) abre propriedades da fonte -->
+                    Tabela de Horários
+                </font>             <!-- (</font color="cor_da_fonte">) fecha propriedades da fonte -->
+            </h2>                   <!-- (</h2>) fecha conteudo 2 no cabeçalho  -->
+        </center>                   <!-- (</center>) fecha centralização de tudo que estiver dentro dessa tag -->
+    
+    </header>                       <!-- (</header>) fecha espaço de cabeçalho -->
+
+
+    
+    <p>                   <!-- (<p>) abre paragrafo -->
+        Paragrafo 1       <!-- conteudo dentro do paragrafo -->
+    </p>                  <!-- (</p>) fecha paragrafo --> 
+
+    <p>                   
+        Paragrafo 2
+    </p>                  
+
+    <p> Ai vem
+    <br/>uma              <!-- (<br/>) quebra de linha no meio do conteudo do paragrafo -->
+     quebra de linha</p>
+
+                                                         
+                                                        <!--INSERIR IMAGENS:--> 
+    <img src="fib.jpg" height="50" width="50">     <!-- inserir imagem (src="nome_do_arquivo"(necessario estar na mesma pasta)), height="altura", width="largura") -->
+    
+                                                         <!--INSERIR LINKS:--> 
+    <a href="https://fibbauru.br" target="_blank"> <!-- (<a...>) abre inserir link, href="https://seu_link.com", target="abrir em nova aba"--> 
+        <p>
+            Clique aqui para abrir o site da Fib!
+        </p>       
+    </a>                                           <!-- (<\a>) fecha inserir link -->  
+    
+    
+                                                     <!-- INSERIR LINKS A IMAGENS: --> 
+    <a href="https://fibbauru.br" target="_blank">
+        
+        <img src="fib.jpg" height="50" width="50"> <!-- ((<a href=...> <img src=...> <\a>), adicionar link a imagem inserida)-->  
+        
+    </a>
+    <p>
+        Clique na logo da FIB para abrir o site!      <!-- Este paragrafo está fora das TAGs <a...> </a>, portanto ele não é um link -->
+    </p>       
+
+
+                                                           <!--LISTAS:--> 
+    <ul>                            <!-- (<ul>) abre lista não numerada -->
+        <li>LISTA NÃO NUMERADA</li> <!-- (<li>) abre campo de lista -->
+        <li>LISTA NÃO NUMERADA</li> <!-- (A TAG "ul" Define a lista como "não numerada") -->
+        <li>LISTA NÃO NUMERADA</li> <!-- (</li>) fecha campo de lista -->
+    </ul>                           <!-- (</ul>) fecha lista não numerada -->   
+    
+    <ol>                            <!-- (<ol>) abre lista numerada -->
+        <li>LISTA NUMERADA</li>
+        <li>LISTA NUMERADA</li>     <!-- (A TAG "ol" Define a lista como "numerada") --> 
+        <li>LISTA NUMERADA</li>
+    </ol>                           <!-- (</ol>) fecha lista numerada -->
+
+    <br/>                           <!-- (<br/>) quebra de linha -->
+
+                                                           <!--TABELAS:-->
+                                                           
+    <table border="1">                          <!-- (<table>) abre tabela, (<table border="espessura_da_borda">) abre tabela com borda -->
+        <thead>                                 <!-- (<thead>) abre propridades do cabeçalho da tabela -->
+            <tr>                                <!-- (<tr>) abre criação de linha dentro da tabela -->
+                <th colspan="7">PROVA</th>   <!-- (<th>) o conteudo dentro dessas tags fica centralizado e em negrito, usado para titulos (</th>), 
+                                                (<th colspan="mesclar_"n"_celulas_da_tabela"> Conteudo escrito da tabela</th>)-->
+            </tr>                               <!-- (</tr>) fecha criação de linha dentro da tabela -->
+        </thead>                                <!-- (</thead>) fecha propridades do cabeçalho da tabela -->
+
+        <tr>                                    <!-- (<tr>) abre criação de linha dentro da tabela -->
+            <td>B</td>                          <!-- (<td>) abre celula -->
+            <td>O</td>                          <!-- <td> conteudo_dentro_da_celula </td> -->
+            <td>N</td>                          <!-- (</td>) fecha celula -->
+            <td>S</td>
+            <td>&nbsp;</td>                     <!-- <td> &nbsp;= deixar celula vazia/em branco </td> -->
+            <td>&nbsp;</td>                     <!-- (</tr>) fecha criação de linha dentro da tabela -->
+            <td>&nbsp;</td>
+        </tr>                       
+        <tr>
+            <td>E</td>
+            <td>S</td>
+            <td>T</td>
+            <td>U</td>                          <!-- assim como <thead> foi usado acima para gerenciar o cabeçalho da tabela, <tbody> pode ser -->
+            <td>D</td>                          <!-- usado para gerenciar o corpo da tabela, ultilizando as mesmas propriedades -->
+            <td>O</td>
+            <td>S</td>
+        </tr>
+        <tr>
+            <td>P</td>
+            <td>E</td>
+            <td>S</td>
+            <td>S</td>
+            <td>O</td>
+            <td>A</td>                          <!-- assim como <thead> foi usado acima para gerenciar o cabeçalho da tabela, <tfoot> pode ser -->   
+            <td>L</td>                          <!-- usado para gerenciar o rodapé da tabela, ultilizando as mesmas propriedades -->
+        </tr>
+            
+    
+    </table>                                                       
+
+</body>                  <!-- (</body>) fecha/corpo da pagina -->
+</html>                  <!-- (</html> ) fecha pagina html -->
+
+
+
+<!-- Escrito por: João Vitor Vieira Finoti. -->
+ <!-- Ciencias da Computação - FIB -->
